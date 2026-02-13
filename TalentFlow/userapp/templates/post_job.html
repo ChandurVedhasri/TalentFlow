@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Job</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <h1>Post a Job</h1>
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{ msg }}</p>
+        {% endfor %}
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label>Job Title:</label><input type="text" name="title"><br>
+        <label>Description:</label><textarea name="description"></textarea><br>
+        <label>Required Skills (comma separated):</label><input type="text" name="required_skills"><br>
+        <button type="submit">Post Job</button>
+    </form>
+    <a href="{% url 'recruiter_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

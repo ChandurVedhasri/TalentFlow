@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<h1>{{ job.title }} 📝</h1>
+
+<nav>
+    <a href="{% url 'student_dashboard' %}">Dashboard</a>
+    <a href="{% url 'view_jobs' %}">Back to Jobs</a>
+    <a href="{% url 'upload_resume' %}">Upload Resume</a>
+    <a href="{% url 'student_applications' %}">Applications</a>
+    <a href="{% url 'logout' %}">Logout</a>
+</nav>
+
+<div class="card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+    <h2>{{ job.title }}</h2>
+    <p><strong>Required Skills:</strong> {{ job.required_skills }}</p>
+    <p>{{ job.description }}</p>
+
+    {% if already_applied %}
+        <button disabled>Already Applied ✅</button>
+    {% else %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label>Resume (optional, will use uploaded resume if empty):</label>
+            <input type="file" name="resume">
+            <input type="submit" value="Apply Now 💼">
+        </form>
+    {% endif %}
+</div>
+
+</body>
+</html>

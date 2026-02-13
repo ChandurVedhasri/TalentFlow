@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Company Details</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    <h2>Edit Company Details</h2>
+    <hr>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Company Name:</label><br>
+        <input type="text" name="company_name" required><br><br>
+
+        <label>Company Email:</label><br>
+        <input type="email" name="company_email" required><br><br>
+
+        <label>Company Location:</label><br>
+        <input type="text" name="company_location"><br><br>
+
+        <label>Company Description:</label><br>
+        <textarea name="company_description" rows="4"></textarea><br><br>
+
+        <button type="submit">Update Details</button>
+    </form>
+
+    <br>
+    <a href="{% url 'recruiter_dashboard' %}">Back to Dashboard</a>
+
+</body>
+</html>

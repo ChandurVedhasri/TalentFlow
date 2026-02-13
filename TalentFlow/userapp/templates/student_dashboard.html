@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<style>
+    /* General body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Cards for AI tips or sections */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #0077cc;
+}
+
+a:hover {
+    color: #004080;
+}
+
+</style>
+    <div class="container">
+        <h2>Welcome, {{ request.user.username }} 👩‍🎓</h2>
+        <!-- Navigation -->
+          <nav>
+            <a href="{% url 'student_dashboard' %}">Dashboard</a>
+            <a href="{% url 'view_jobs' %}">View Jobs</a>
+            <a href="{% url 'upload_resume' %}">Upload Resume</a>
+           <a href="{% url 'student_applications' %}">Applications</a>
+            <a href="{% url 'logout' %}">Logout</a>
+           </nav>
+
+
+        <!-- AI Career Tip -->
+        <div class="card">
+            <h3>AI Career Tip:</h3>
+            <blockquote>{{ career_tip }}</blockquote>
+        </div>
+
+        <!-- Recommended Jobs -->
+        <div class="card">
+            <h3>Available Jobs:</h3>
+            {% if jobs %}
+            <ul>
+                {% for job in jobs %}
+                <li>
+                    <strong>{{ job.title }}</strong>
+                    |
+                    <a href="{% url 'apply_job' job.id %}">Apply</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No jobs available.</p>
+        {% endif %}
+    </div>
+
+    </div>
+
+</body>
+</html>

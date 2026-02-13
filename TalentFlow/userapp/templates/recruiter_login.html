@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TalentFlow | Recruiter Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(120deg, #4f46e5, #06b6d4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 420px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #374151;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #d1d5db;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #4f46e5;
+            outline: none;
+        }
+
+        .toggle {
+            position: absolute;
+            right: 10px;
+            top: 36px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #4f46e5;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .error {
+            text-align: center;
+            color: #dc2626;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Recruiter Login</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="error">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST" action="{% url 'recruiter_login' %}">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" id="password" required>
+            <span class="toggle" onclick="togglePassword()">Show</span>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="links">
+        New recruiter?
+        <a href="{% url 'register' %}">Register here</a><br><br>
+        Are you a student?
+        <a href="{% url 'student_login' %}">Student Login</a>
+    </div>
+</div>
+
+<script>
+function togglePassword() {
+    const pwd = document.getElementById("password");
+    pwd.type = pwd.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

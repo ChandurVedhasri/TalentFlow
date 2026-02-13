@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <title> My Applications</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<h2>My Applications</h2>
+
+{% if applications %}
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Job Title</th>
+        <th>Status</th>
+        <th>Applied On</th>
+    </tr>
+    {% for app in applications %}
+    <tr>
+        <td>{{ app.job.title }}</td>
+        <td>Applied</td>
+        <td>{{ app.applied_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>You haven’t applied to any jobs yet.</p>
+{% endif %}
