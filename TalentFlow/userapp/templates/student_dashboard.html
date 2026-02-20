@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<style>
+    /* General body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Cards for AI tips or sections */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #0077cc;
+}
+
+a:hover {
+    color: #004080;
+}
+
+</style>
+    <div class="container">
+        <h2>Welcome, {{ request.user.username }} 👩‍🎓</h2>
+        <!-- Profile Card (My Profile) - Improved Professional Style -->
+        <style>
+            .pf-container { max-width:1000px; margin:12px auto; }
+            .pf-card { display:flex; gap:20px; align-items:center; padding:18px; background:#ffffffee; border-radius:12px; box-shadow:0 8px 30px rgba(14,30,37,0.08); }
+            .pf-avatar { width:96px; height:96px; border-radius:12px; overflow:hidden; flex:0 0 96px; background:linear-gradient(135deg,#eef2ff,#f7fff0); display:flex; align-items:center; justify-content:center; }
+            .pf-avatar img { width:100%; height:100%; object-fit:cover; border-radius:10px; }
+            .pf-main { flex:1; }
+            .pf-name { font-size:1.25rem; font-weight:700; margin:0; color:#0f172a; }
+            .pf-sub { color:#475569; margin:6px 0; }
+            .pf-meta { display:flex; gap:12px; color:#334155; font-size:0.95rem; margin-top:6px; }
+            .pf-skills { margin-top:10px; }
+            .skill-badge { display:inline-block; background:#eef2ff; color:#065f46; border-radius:999px; padding:6px 10px; font-size:0.85rem; margin-right:6px; margin-bottom:6px; }
+            .pf-actions { margin-top:10px; }
+            .edit-btn { display:inline-block; padding:8px 12px; background:#0f172a; color:white; border-radius:8px; text-decoration:none; }
+        </style>
+
+        <div class="pf-container">
+            <div class="pf-card">
+                <div class="pf-avatar">
+                    {% if profile.profile_picture %}
+                        <img src="{{ profile.profile_picture.url }}" alt="Profile Picture">
+                    {% else %}
+                        <img src="{% static 'userapp/default_profile.png' %}" alt="Profile Picture">
+                    {% endif %}
+                </div>
+                <div class="pf-main">
+                    <h3 class="pf-name">{{ profile.user.username }}</h3>
+                    <div class="pf-sub">{{ profile.headline }}</div>
+                    <div class="pf-meta">
+                        <div><strong>CGPA:</strong> {{ profile.cgpa }}</div>
+                        <div><strong>Experience:</strong> {{ profile.experience }} yrs</div>
+                    </div>
+                    <div class="pf-skills">
+                        {% for s in profile.get_skills %}
+                            <span class="skill-badge">{{ s }}</span>
+                        {% empty %}
+                            <span style="color:#64748b;">No skills provided.</span>
+                        {% endfor %}
+                    </div>
+                    <div class="pf-actions">
+                        <a href="{% url 'edit_profile' %}" class="edit-btn">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px; color:#fff;">
+            {% if profile %}
+                {% with links=profile.get_links %}
+                    {% if links.linkedin %}
+                        <a href="{{ links.linkedin }}" target="_blank" style="color:#fff; margin-right:8px;">LinkedIn</a>
+                    {% endif %}
+                    {% if links.github %}
+                        <a href="{{ links.github }}" target="_blank" style="color:#fff; margin-right:8px;">GitHub</a>
+                    {% endif %}
+                    {% if links.portfolio %}
+                        <a href="{{ links.portfolio }}" target="_blank" style="color:#fff; margin-right:8px;">Portfolio</a>
+                    {% endif %}
+                    {% if links.other %}
+                        {% for o in links.other %}
+                            <a href="{{ o.url }}" target="_blank" style="color:#fff; margin-right:8px;">{{ o.label }}</a>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            {% endif %}
+        </div>
+        <!-- Navigation -->
+          <nav style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:12px;">
+                <a href="{% url 'index' %}" title="TalentFlow">
+                    <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'student_dashboard' %}">Dashboard</a>
+                <a href="{% url 'view_jobs' %}">View Jobs</a>
+                <a href="{% url 'upload_resume' %}">Upload Resume</a>
+                <a href="{% url 'student_applications' %}">Applications</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+           </nav>
+
+
+        <!-- AI Career Tip -->
+        <div class="card">
+            <h3>AI Career Tip:</h3>
+            <blockquote>{{ career_tip }}</blockquote>
+        </div>
+
+        <!-- Recommended Jobs -->
+        <div class="card">
+            <h3>Available Jobs:</h3>
+            {% if jobs_with_score %}
+            <ul>
+                {% for item in jobs_with_score %}
+                <li style="margin-bottom:10px;">
+                    <strong>{{ item.job.title }}</strong>
+                    - Score: <strong>{{ item.score }}%</strong>
+                    <em>({{ item.recommendation }})</em>
+                    |
+                    {% if item.already_applied %}
+                        <strong>Already Applied ✅</strong>
+                    {% else %}
+                        {% if item.job.application_link %}
+                            <a href="{% url 'apply_external' item.job.id %}" target="_blank">Apply Externally</a>
+                        {% else %}
+                            <a href="{% url 'apply_job' item.job.id %}">Apply</a>
+                        {% endif %}
+                    {% endif %}
+                    |
+                    <a href="{% url 'view_job' item.job.id %}">Details</a>
+                    {% if item.missing_skills %}
+                        <div style="margin-top:6px; color:#b30000; font-size:0.95em;">
+                            Missing skills: {{ item.missing_skills|join:", " }}
+                        </div>
+                    {% else %}
+                        <div style="margin-top:6px; color:#006600; font-size:0.95em;">All required skills matched ✅</div>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No jobs available.</p>
+            {% endif %}
+        </div>
+
+    </div>
+
+</body>
+</html>

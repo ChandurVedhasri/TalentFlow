@@ -1,0 +1,48 @@
+{% load static %}
+<head>
+    <title> My Applications</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<h2>My Applications</h2>
+
+{% if applications %}
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Job Title</th>
+        <th>ATS Score</th>
+        <th>Recommendation</th>
+        <th>Status</th>
+        <th>Applied On</th>
+        <th>Action</th>
+    </tr>
+    {% for item in applications %}
+    <tr>
+        <td>{{ item.application.job.title }}</td>
+        <td>{{ item.score }}%</td>
+        <td>{{ item.recommendation }}</td>
+        <td>
+            {% if item.application.status == 'applied' %}
+                Applied
+            {% elif item.application.status == 'withdrawn' %}
+                Withdrawn ({{ item.application.withdrawn_at }})
+            {% else %}
+                {{ item.application.status }}
+            {% endif %}
+        </td>
+        <td>{{ item.application.applied_at }}</td>
+        <td>
+            {% if item.application.status == 'applied' %}
+                <form method="post" action="{% url 'withdraw_application' item.application.id %}" style="display:inline;" onsubmit="return confirm('Are you sure you want to withdraw this application?');">
+                    {% csrf_token %}
+                    <button type="submit">Withdraw</button>
+                </form>
+            {% else %}
+                -
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>You haven’t applied to any jobs yet.</p>
+{% endif %}

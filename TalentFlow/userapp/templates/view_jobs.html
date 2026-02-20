@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<h1>{{ job.title }} 📝</h1>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'student_dashboard' %}">Dashboard</a>
+        <a href="{% url 'view_jobs' %}">Back to Jobs</a>
+        <a href="{% url 'upload_resume' %}">Upload Resume</a>
+        <a href="{% url 'student_applications' %}">Applications</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+<div class="card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+    <h2>{{ job.title }}</h2>
+    <p><strong>ATS Score:</strong> {{ score }}% &nbsp; <em>({{ recommendation }})</em></p>
+    <p><strong>Required Skills:</strong> {{ job.required_skills }}</p>
+    <p>{{ job.description }}</p>
+    {% if missing_skills %}
+        <p style="color:#b30000;"><strong>Missing Skills:</strong> {{ missing_skills|join:", " }}</p>
+    {% else %}
+        <p style="color:#006600;"><strong>Skills:</strong> All required skills matched ✅</p>
+    {% endif %}
+
+    {% if already_applied %}
+        <button disabled>Already Applied ✅</button>
+    {% else %}
+        {% if job.application_link %}
+            <a href="{% url 'apply_external' job.id %}" target="_blank">Apply Externally</a>
+        {% else %}
+            <form method="POST" action="{% url 'apply_job' job.id %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label>Resume (required):</label>
+                <input type="file" name="resume" required>
+                <input type="submit" value="Apply Now 💼">
+            </form>
+            <div>
+                <p>Or upload a resume to your profile first: <a href="{% url 'upload_resume' %}">Upload Resume</a></p>
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>

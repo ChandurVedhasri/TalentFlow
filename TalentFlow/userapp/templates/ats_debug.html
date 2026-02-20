@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding:20px;">
+  <h2>ATS Debug Log</h2>
+  <p>Log file: {{ log_path }}</p>
+  <form method="get">
+    <label>Filter by user:</label>
+    <input type="text" name="user" placeholder="username" value="{{ request.GET.user }}" />
+    <button type="submit">Filter</button>
+    <a href="{% url 'ats_debug' %}">Clear</a>
+  </form>
+
+  <hr />
+
+  {% if entries %}
+    <ul>
+      {% for e in entries %}
+        <li style="margin-bottom:1rem; white-space:pre-wrap; font-family:monospace; background:#f7f7f7; padding:10px; border-radius:6px;">{{ e }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No log entries found.</p>
+  {% endif %}
+</div>
+{% endblock %}

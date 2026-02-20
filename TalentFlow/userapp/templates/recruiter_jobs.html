@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Jobs</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'recruiter_dashboard' %}">Dashboard</a>
+        <a href="{% url 'post_job' %}">Post Job</a>
+        <a href="{% url 'recruiter_applications' %}">Applications</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+<div style="max-width:900px; margin:30px auto;">
+    <h1>My Jobs</h1>
+
+    {% if jobs %}
+        <ul style="list-style:none; padding:0;">
+            {% for job in jobs %}
+                <li style="background:#fff; padding:16px; margin-bottom:12px; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.08);">
+                    <h3 style="margin:0 0 6px 0;">{{ job.title }}</h3>
+                    <div style="font-size:14px; color:#555; margin-bottom:8px;">{{ job.description|truncatewords:30 }}</div>
+                    <div>
+                        <strong>Required Skills:</strong>
+                        {% if job.get_required_skills %}
+                            {{ job.get_required_skills|join:", " }}
+                        {% else %}
+                            N/A
+                        {% endif %}
+                        &nbsp; | &nbsp;
+                        <a href="{% url 'recruiter_applications' %}">View Applications</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No jobs posted yet. <a href="{% url 'post_job' %}">Post your first job</a>.</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

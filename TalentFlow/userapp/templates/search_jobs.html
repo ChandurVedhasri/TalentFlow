@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Search</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #555;
+        }
+        nav a:hover {
+            color: #f08a5d;
+        }
+        .jobs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            width: 300px;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .card p {
+            color: #fff;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            background: #ff7e5f;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .card a:hover {
+            background: #feb47b;
+        }
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ffdd59;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .no-jobs {
+            text-align: center;
+            color: #555;
+            font-style: italic;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Available Jobs 🔍</h1>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'student_dashboard' %}">Dashboard</a>
+        <a href="{% url 'upload_resume' %}">Upload Resume</a>
+        <a href="{% url 'student_applications' %}">Applications</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+<div class="jobs-container">
+    {% if jobs %}
+        {% for job in jobs %}
+            <div class="card">
+                {% if forloop.counter <= 3 %}
+                    <span class="badge">Recommended 🔥</span>
+                {% endif %}
+                <h3>{{ job.title }}</h3>
+                <p><strong>Required Skills:</strong> {{ job.required_skills }}</p>
+                <p>{{ job.description|truncatewords:30 }}</p>
+                <a href="{% url 'view_job' job.id %}">View & Apply</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="no-jobs">No jobs found matching your skills. Keep updating your profile!</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

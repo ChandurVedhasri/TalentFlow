@@ -1,0 +1,11 @@
+full_name,email,phone,skills,experience
+Rahul Sharma,rahul@gmail.com,9876543210,Python;Django;SQL,2
+Anita Verma,anita@gmail.com,9123456780,Java;Spring Boot,3
+Karan Mehta,karan@gmail.com,9988776655,React;JavaScript;HTML;CSS,1
+Sneha Reddy,sneha@gmail.com,9090909090,Data Analysis;Python;Pandas,4
+Arjun Patel,arjun@gmail.com,8887776665,Machine Learning;Python;TensorFlow,2
+Priya Nair,priya@gmail.com,9998887776,UI/UX;Figma;HTML;CSS,3
+Vikram Singh,vikram@gmail.com,9012345678,NodeJS;MongoDB;Express,2
+Neha Gupta,neha@gmail.com,9345678123,Testing;Selenium;Java,3
+Rohit Das,rohit@gmail.com,9567890123,Android;Kotlin;Firebase,2
+Meera Iyer,meera@gmail.com,9786543210,Data Science;R;Python,5

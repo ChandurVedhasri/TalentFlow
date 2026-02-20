@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for Jobs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <h1>Apply for Jobs</h1>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <h3>{{ job.title }}</h3>
+                <p>{{ job.description }}</p>
+                <p>Required Skills: {{ job.required_skills }}</p>
+            </li>
+        {% empty %}
+            <li>No jobs available to apply.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'student_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

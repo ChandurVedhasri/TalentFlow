@@ -1,0 +1,11 @@
+<h2>AI Career Assistant</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="message" placeholder="Ask career question" required>
+    <button type="submit">Ask</button>
+</form>
+
+{% if reply %}
+<p><strong>AI:</strong> {{ reply }}</p>
+{% endif %}

@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TalentFlow | Register</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(120deg, #4f46e5, #06b6d4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 420px;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #111827;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 11px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            border-color: #4f46e5;
+            outline: none;
+        }
+
+        .toggle {
+            position: absolute;
+            right: 12px;
+            top: 38px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #4f46e5;
+            font-weight: 500;
+        }
+
+        .strength {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .weak { color: #dc2626; }
+        .medium { color: #d97706; }
+        .strong { color: #16a34a; }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .error {
+            text-align: center;
+            color: #dc2626;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Create Account</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="error">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+        {{ user_form.username.label_tag }}
+        {{ user_form.username }}
+    </div>
+
+    <div class="form-group">
+        {{ user_form.password1.label_tag }}
+        {{ user_form.password1 }}
+    </div>
+
+    <div class="form-group">
+        {{ user_form.password2.label_tag }}
+        {{ user_form.password2 }}
+    </div>
+
+    <div class="form-group">
+        {{ profile_form.user_type.label_tag }}
+        {{ profile_form.user_type }}
+    </div>
+    <div class="form-group">
+        {{ user_form.email.label_tag }}
+        {{ user_form.email }}
+    </div>
+
+
+    <button type="submit" class="btn">Register</button>
+</form>
+
+
+
+    <div class="links">
+        Already have an account?<br>
+        <a href="{% url 'student_login' %}">Student Login</a> |
+        <a href="{% url 'recruiter_login' %}">Recruiter Login</a>
+    </div>
+</div>
+
+<script>
+function checkStrength() {
+    const pwd = document.getElementById("id_password1").value;
+    const strength = document.getElementById("strength");
+
+    if (pwd.length < 6) {
+        strength.textContent = "Weak password";
+        strength.className = "strength weak";
+    } 
+    else if (pwd.match(/[A-Z]/) && pwd.match(/[0-9]/)) {
+        strength.textContent = "Strong password";
+        strength.className = "strength strong";
+    } 
+    else {
+        strength.textContent = "Medium password";
+        strength.className = "strength medium";
+    }
+}
+</script>
+
+</body>
+</html>

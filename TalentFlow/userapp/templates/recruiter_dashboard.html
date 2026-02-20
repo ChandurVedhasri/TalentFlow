@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #222;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 12px;
+            text-align: center;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        .resume-link {
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        .resume-link:hover {
+            color: #004080;
+        }
+
+        .empty {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Welcome, {{ request.user.username }} 🧑‍💼</h2>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'recruiter_dashboard' %}">Dashboard</a>
+        <a href="{% url 'post_job' %}">Post Job</a>
+        <a href="{% url 'recruiter_applications' %}">Applications</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+<div class="card">
+    <h3>                   Status             </h3>
+    <p>Total Jobs Posted: {{ total_jobs }}</p>
+    <p>Total Applications Received: {{ total_applications }}</p>
+</div>
+
+</body>
+</html>

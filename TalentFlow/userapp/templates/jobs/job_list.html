@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Jobs</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'student_dashboard' %}">Dashboard</a>
+        <a href="{% url 'view_jobs' %}">Jobs</a>
+        <a href="{% url 'upload_resume' %}">Upload Resume</a>
+        <a href="{% url 'student_applications' %}">Applications</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+<div style="max-width:900px; margin:30px auto;">
+    <h1>Available Jobs 🔍</h1>
+
+    {% if jobs_with_score %}
+        <ul style="list-style:none; padding:0;">
+            {% for item in jobs_with_score %}
+                <li style="background:#fff; padding:16px; margin-bottom:12px; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.08);">
+                    <h3 style="margin:0 0 6px 0;">{{ item.job.title }}</h3>
+                    <div style="font-size:14px; color:#555; margin-bottom:8px;">{{ item.job.description|truncatewords:30 }}</div>
+                    <div>
+                        <strong>ATS Score:</strong> {{ item.score }}% &nbsp; 
+                        <em>({{ item.recommendation }})</em>
+                        &nbsp; | &nbsp;
+                        {% if item.already_applied %}
+                            <strong>Already Applied ✅</strong>
+                        {% else %}
+                            {% if item.job.application_link %}
+                                <a href="{% url 'apply_external' item.job.id %}" target="_blank">Apply Externally</a>
+                            {% else %}
+                                <a href="{% url 'apply_job' item.job.id %}">Apply</a>
+                            {% endif %}
+                        {% endif %}
+                        &nbsp; | &nbsp;
+                        <a href="{% url 'view_job' item.job.id %}">Details</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No jobs available.</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

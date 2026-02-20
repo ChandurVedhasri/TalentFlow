@@ -1,0 +1,1080 @@
+[2026-02-13T10:48:26.518716] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:48:26.547739] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:48:26.553717] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:48:27.554093] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:48:27.571777] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:48:27.571777] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:49:15.272444] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:49:15.298460] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:49:15.300634] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:49:15.827309] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:49:15.853356] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:49:15.855622] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:50:44.940356] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:44.973298] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:44.973298] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:50:45.941277] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:45.969297] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:45.971298] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:50:46.095693] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:46.122964] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:46.122964] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:50:46.309131] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:46.321811] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:50:46.337547] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:54:04.249485] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:04.427515] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:04.468272] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:54:07.033027] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:11.480717] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:54:11.480717] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:11.729681] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:15.181286] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:54:15.190192] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:15.253229] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:17.726153] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:17.811634] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:17.815243] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:54:17.949238] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:18.001838] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:54:18.004419] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:56:33.132247] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:56:33.256457] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:56:33.258464] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:56:56.681520] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:56:56.709936] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:56:56.709936] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T10:58:53.702805] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:58:53.703912] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T10:58:53.703912] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:00:18.978036] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:21.480643] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:21.785742] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:21.928863] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:22.230262] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:22.717512] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:00:22.762655] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:22.963049] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:23.912640] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:00:24.055508] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:00:24.529227] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:00:24.629985] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:00:59.934571] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:00.047695] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:00.070899] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:00.534223] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:00.548975] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:00.582099] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:01.691368] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:01.718048] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:01.742433] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:03.231693] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:03.296868] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:03.352962] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:03.711908] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:04.023894] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:04.073155] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:14.630451] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:14.682134] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:14.738728] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:01:19.880941] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:19.883573] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:01:19.883573] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:03:11.618779] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:11.650773] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:11.714246] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:03:12.330925] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:12.400653] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:12.741690] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:03:12.945995] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:13.000798] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:13.060766] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:03:13.170938] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:13.231181] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:13.288963] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:03:16.837734] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:17.036059] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:03:18.257125] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:04:21.047471] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:04:21.396864] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:04:21.425815] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:06:20.650752] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:06:20.765278] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:06:20.782759] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:06:21.535082] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:06:22.691595] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:06:22.765833] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:11:01.056323] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:11:01.056323] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:11:01.057211] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:16:31.736358] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:16:31.737357] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:16:31.737357] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:16:41.237454] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:16:41.237454] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:16:41.297642] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:33:26.467498] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:33:26.785384] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T11:33:27.114122] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T11:35:51.333073] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:35:51.333073] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:35:51.333073] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:36:50.640362] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:36:50.640362] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:36:50.640362] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:47.319341] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:47.319341] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:47.319341] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:48.500382] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:48.500382] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:48.500382] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:56.973633] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:56.974634] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:38:56.974634] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:14.605978] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:14.605978] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:14.605978] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:57.779853] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:57.780854] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:39:57.780854] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:15.479930] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:15.482883] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:15.482883] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:45.611688] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:55.711088] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Python_Developer_Intern_Assignemment_.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:55.819005] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:40:55.820027] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:00.300328] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Python_Developer_Intern_Assignemment_.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:02.662926] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Python_Developer_Intern_Assignemment_.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:05.572297] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Python_Developer_Intern_Assignemment_.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:08.519216] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:08.742680] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:15.083994] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume_UqXopKc.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-13T11:41:15.113394] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:41:15.115538] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:42:07.049967] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:42:07.049967] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:42:07.049967] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:42:46.791774] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume_UqXopKc.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-13T11:42:46.845084] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:42:46.847076] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:43:02.970579] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume_UqXopKc.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-13T11:43:03.045986] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:43:03.060748] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:43:08.319504] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume_UqXopKc.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-13T11:43:10.752511] user=test job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume_UqXopKc.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-13T11:43:34.880138] user=test job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:43:34.880138] user=test job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T11:43:34.880138] user=test job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T12:02:37.114879] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:37.321766] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:37.372471] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:02:47.429735] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:47.486840] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:47.545162] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:02:50.434065] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:02:50.556868] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:50.618029] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:53.717197] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:02:54.444819] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:55.130483] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:57.893319] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:02:57.976936] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:02:58.043116] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:03:02.973811] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:03:02.973811] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:03:02.973811] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:03:09.970227] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:03:09.972227] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=2 job_skills_count=3
+  skill_score=26.67 edu_score=30.00 exp_score=20.00 cert_score=0.00 total_score=76.67
+
+[2026-02-13T12:03:09.973228] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=1 job_skills_count=3
+  skill_score=13.33 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=13.33
+
+[2026-02-13T12:03:16.776209] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T12:03:16.792322] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-13T12:03:16.792322] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:24.099645] user=vedhasrichandur job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:24.103700] user=vedhasrichandur job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:24.107719] user=vedhasrichandur job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:40.269178] user=vedhasrichandur job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:40.277179] user=vedhasrichandur job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:49:40.286159] user=vedhasrichandur job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:52:23.696631] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:52:23.701670] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:52:23.701670] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:53:31.150185] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:53:31.150185] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:53:31.150185] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:10.867034] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:10.870285] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:10.874067] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:17.256876] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:17.261454] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:17.263873] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:28.013288] user=vedha job_id=3 title=python developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\satish_resumee.pdf resume_len=1219 is_resume_like=True
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:28.099012] user=vedha job_id=1 title=Backend Developer
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\Chandur_Vedhasri_5dWZkZ9.pdf resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:54:28.167298] user=vedha job_id=2 title=Data Analyst
+  resume_path=C:\Users\chand\TalentFlow\media\application_resumes\resume.pdf resume_len=1780 is_resume_like=True
+  matched_resume=2 matched_profile=0 job_skills_count=3
+  skill_score=26.67 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=26.67
+
+[2026-02-20T14:56:46.684757] user=vedha job_id=1 title=Backend Developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:56:46.694785] user=vedha job_id=2 title=Data Analyst
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
+[2026-02-20T14:56:46.703182] user=vedha job_id=3 title=python developer
+  resume_path=None resume_len=0 is_resume_like=False
+  matched_resume=0 matched_profile=0 job_skills_count=3
+  skill_score=0.00 edu_score=0.00 exp_score=0.00 cert_score=0.00 total_score=0.00
+
