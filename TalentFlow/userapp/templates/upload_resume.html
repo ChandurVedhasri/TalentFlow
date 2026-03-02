@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Upload Resume</title>
+
+<style>
+/* Page background */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    height: 100vh;
+}
+
+/* Center container */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Title */
+.card h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Status message */
+.status {
+    background: #ffeaea;
+    color: #c0392b;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccd3db;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button */
+.btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2d89ef;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #1b6fd8;
+}
+
+/* Back link */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #2d89ef;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <h1>Upload Resume</h1>
+
+        <p class="status">Application withdrawn.</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label>Skills</label>
+            <input type="text" name="skills" placeholder="Python, Django, SQL">
+
+            <label>Resume File</label>
+            <input type="file" name="resume">
+
+            <button type="submit" class="btn-primary">Upload Resume</button>
+        </form>
+
+        <p style="margin-top:12px;"><a href="{% url 'resume_preview' %}">Preview extracted resume text</a></p>
+
+        <a href="{% url 'student_dashboard' %}" class="back-link">← Back to Dashboard</a>
+
+    </div>
+</div>
+
+</body>
+</html>

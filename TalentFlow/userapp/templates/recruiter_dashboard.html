@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #222;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 12px;
+            text-align: center;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        .resume-link {
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        .resume-link:hover {
+            color: #004080;
+        }
+
+        .empty {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Welcome, {{ request.user.username }} 🧑‍💼</h2>
+
+<nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'recruiter_dashboard' %}">Dashboard</a>
+        <a href="{% url 'post_job' %}">Post Job</a>
+        <a href="{% url 'recruiter_applications' %}">Applications</a>
+        <span style="position:relative; display:inline-block;">
+            <a href="javascript:void(0);" id="notifToggleRec" style="text-decoration:none; margin-left:8px;">
+                🔔 {% if unread_notifications %}<span style="background:#e11d48;color:#fff;border-radius:12px;padding:2px 6px;font-size:12px;margin-left:4px;">{{ unread_notifications }}</span>{% endif %}
+            </a>
+            <div id="notifDropdownRec" style="display:none; position:absolute; right:0; background:#fff; border:1px solid #ddd; width:320px; box-shadow:0 8px 24px rgba(0,0,0,0.1); z-index:50;">
+                <div style="padding:8px; border-bottom:1px solid #eee; font-weight:600;">Notifications</div>
+                <div style="max-height:260px; overflow:auto;">
+                    {% if recent_notifications %}
+                        {% for note in recent_notifications %}
+                            <div style="padding:10px; border-bottom:1px solid #f3f3f3;">
+                                <a href="{% url 'mark_notification' note.id %}" style="text-decoration:none; color:inherit;">{% if not note.read %}<strong>{% endif %}{{ note.message }}{% if not note.read %}</strong>{% endif %}</a>
+                                <div style="font-size:11px; color:#666; margin-top:6px;">{{ note.created_at|date:'d M Y H:i' }}</div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div style="padding:10px;">No notifications.</div>
+                    {% endif %}
+                </div>
+                <div style="padding:8px; text-align:center;"><a href="{% url 'notifications' %}">View all</a></div>
+            </div>
+        </span>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</nav>
+
+    <script>
+    document.addEventListener('click', function(e){
+        const toggle = document.getElementById('notifToggleRec');
+        const dropdown = document.getElementById('notifDropdownRec');
+        if(!toggle) return;
+        if(toggle.contains(e.target)){
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        } else if(!dropdown.contains(e.target)){
+            dropdown.style.display = 'none';
+        }
+    });
+    </script>
+
+<div class="card">
+    <h3>                   Status             </h3>
+    <p>Total Jobs Posted: {{ total_jobs }}</p>
+    <p>Total Applications Received: {{ total_applications }}</p>
+</div>
+
+{% if recent_applications %}
+<div class="card" style="margin-top:20px;">
+    <h3>Recent Applications</h3>
+    <table style="width:100%; border-collapse: collapse;">
+        <tr>
+            <th>Student</th>
+            <th>Job</th>
+            <th>Resume</th>
+            <th>When</th>
+        </tr>
+        {% for app in recent_applications %}
+        <tr>
+            <td>{{ app.user.username }}</td>
+            <td>{{ app.job.title }}</td>
+            <td>
+                {% if app.resume %}
+                    <a class="resume-link" href="{{ app.resume.url }}" target="_blank">View</a>
+                {% else %}
+                    –
+                {% endif %}
+            </td>
+            <td>{{ app.applied_at|date:"d M Y" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% if total_applications > recent_applications|length %}
+        <p style="text-align:center; margin-top:8px;"><a href="{% url 'recruiter_applications' %}">View all applications</a></p>
+    {% endif %}
+</div>
+{% endif %}
+
+</body>
+</html>

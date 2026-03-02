@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Resume Preview</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f3f6fb; margin:0; padding:20px; }
+    .card { background:white; max-width:900px; margin:20px auto; padding:20px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.08);} 
+    pre { white-space:pre-wrap; font-family:inherit; background:#fafafa; padding:12px; border-radius:6px; }
+    .meta { color:#555; font-size:0.95em; }
+    .warning { background:#fff6f6; padding:10px; border-radius:6px; color:#9b1c1c; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Resume Preview</h2>
+    {% if resume_file %}
+      <p class="meta">Using file: {% if resume_file.name %}{{ resume_file.name }}{% else %}profile resume{% endif %}</p>
+    {% else %}
+      <p class="meta">No resume file found. You can upload one on the <a href="{% url 'upload_resume' %}">Upload Resume</a> page.</p>
+    {% endif %}
+
+    {% if resume_text %}
+      <h3>Extracted Text (snippet)</h3>
+      <pre>{{ resume_text }}</pre>
+    {% else %}
+      <div class="warning">
+        <strong>No readable resume text found.</strong>
+        <p>This file may be a scanned PDF or non-searchable document. Try uploading a DOCX or a searchable PDF, or install Tesseract/Poppler for OCR support.</p>
+      </div>
+    {% endif %}
+
+    <h3>Profile Skills</h3>
+    <p>{{ profile_skills|join:", " }}</p>
+
+    <p style="margin-top:14px;"><a href="{% url 'upload_resume' %}">Upload / Replace Resume</a> • <a href="{% url 'student_dashboard' %}">Back to Dashboard</a></p>
+  </div>
+</body>
+</html>

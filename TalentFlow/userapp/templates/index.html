@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TalentFlow | Your Skills, Your Career</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #111827;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: white;
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.95;
+        }
+
+        /* Buttons */
+        .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #4f46e5;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #e0e7ff;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* Quote Card */
+        .quote-card {
+            background: white;
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .quote-card p {
+            font-size: 20px;
+            font-style: italic;
+            color: #374151;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+        <a href="{% url 'index' %}" title="TalentFlow">
+            <img src="{% static 'images/logo.png' %}" alt="TalentFlow Logo" style="height:56px; border-radius:6px;">
+        </a>
+        <h1 style="color:white; margin:0; font-size:22px;">TalentFlow</h1>
+    </div>
+    <div>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'student_login' %}">Student Login</a>
+        <a href="{% url 'recruiter_login' %}">Recruiter Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h2>TalentFlow-Your Skills. Your Career.</h2>
+    <p>
+        “Connecting student skills with recruiter opportunities through intelligent career insights.”
+    </p>
+
+    <div class="cta-buttons">
+        <a href="{% url 'student_login' %}" class="btn-primary">Student Portal</a>
+        <a href="{% url 'recruiter_login' %}" class="btn-secondary">Recruiter Portal</a>
+    </div>
+</div>
+
+<!-- Quotes -->
+<div class="quote-card">
+    <p id="quote"></p>
+</div>
+
+<footer>
+    © 2026 TalentFlow. All rights reserved.
+</footer>
+
+<script>
+const quotes = [
+    "Your career is your responsibility; make it remarkable.",
+    "Dream big, work hard, achieve greatness.",
+    "Opportunities don’t happen. You create them.",
+    "Success is where preparation and opportunity meet.",
+    "Invest in your skills; they will never depreciate.",
+    "Continuous learning is the minimum requirement for success.",
+    "The only way to do great work is to love what you do.",
+    "Start where you are. Use what you have. Do what you can."
+];
+
+let index = 0;
+const quote = document.getElementById("quote");
+
+function rotateQuote() {
+    quote.textContent = quotes[index];
+    index = (index + 1) % quotes.length;
+}
+
+rotateQuote();
+setInterval(rotateQuote, 5000);
+</script>
+
+</body>
+</html>

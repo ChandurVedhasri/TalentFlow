@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {font-family:'Segoe UI',Tahoma,sans-serif;background:#f0f2f5;margin:0;padding:20px;}
+        .container{max-width:800px;margin:0 auto;}
+        .note{background:#fff;padding:15px;margin-bottom:10px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+        .note.unread{font-weight:bold;}
+        .note a{color:#4f46e5;text-decoration:none;}
+        .note a:hover{text-decoration:underline;}
+        .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+        .header h2{margin:0;}
+        .actions button{padding:8px 14px;border:none;background:#4f46e5;color:#fff;border-radius:4px;cursor:pointer;}
+        .actions button:hover{background:#4338ca;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Notifications</h2>
+        <div class="actions">
+            <form method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Mark all read</button>
+            </form>
+        </div>
+    </div>
+
+    {% if notifications %}
+        {% for note in notifications %}
+            <div class="note {% if not note.read %}unread{% endif %}">
+                {{ note.message }}
+                {% if note.url %}
+                    &mdash; <a href="{{ note.url }}">View</a>
+                {% else %}
+                    &mdash;
+                    {% if request.user.profile.user_type == 'recruiter' %}
+                        <a href="{% url 'recruiter_dashboard' %}">Dashboard</a>
+                    {% else %}
+                        <a href="{% url 'student_dashboard' %}">Dashboard</a>
+                    {% endif %}
+                {% endif %}
+                <div style="font-size:11px;color:#666;margin-top:4px;">{{ note.created_at|date:'d M Y H:i' }}</div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No notifications.</p>
+    {% endif %}
+
+    <p>
+        {% if request.user.profile.user_type == 'recruiter' %}
+            <a href="{% url 'recruiter_dashboard' %}">Back to Dashboard</a>
+        {% else %}
+            <a href="{% url 'student_dashboard' %}">Back to Dashboard</a>
+        {% endif %}
+    </p>
+</div>
+</body>
+</html>

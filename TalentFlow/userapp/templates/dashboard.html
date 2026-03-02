@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TalentFlow | Dashboard</title>
+
+    <style>
+        * { box-sizing: border-box; font-family: "Segoe UI", Tahoma, sans-serif; }
+
+        body {
+            margin: 0;
+            background: #f0f2f5;
+        }
+
+        .header {
+            background: linear-gradient(120deg, #4f46e5, #06b6d4);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .profile-card, .jobs-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        h2, h3 { color: #111827; margin-bottom: 15px; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li { margin-bottom: 8px; font-size: 15px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; font-size: 14px; }
+        th { background: #4f46e5; color: white; }
+        tr:nth-child(even) { background: #f9f9f9; }
+
+        .apply { color: white; background: #16a34a; padding: 5px 10px; border-radius: 6px; font-size: 13px; }
+        .improve { color: white; background: #d97706; padding: 5px 10px; border-radius: 6px; font-size: 13px; }
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .edit-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: #4f46e5;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .edit-btn:hover { background: #4338ca; }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome, {{ profile.user.username }}!</h1>
+</div>
+
+<div class="container">
+
+    <!-- Profile Card -->
+    <div class="profile-card" style="text-align: center;">
+        {% if profile.profile_picture %}
+            <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="profile-pic">
+        {% else %}
+            <img src="{% static 'userapp/default_profile.png' %}" alt="Profile Picture" class="profile-pic">
+        {% endif %}
+
+        <h2>{{ profile.user.username }}</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li><strong>Role:</strong> {{ profile.user_type }}</li>
+            <li><strong>CGPA:</strong> {{ profile.cgpa }}</li>
+            <li><strong>Skills:</strong> {{ profile.skills|join:", " }}</li>
+            <li><strong>Experience:</strong> {{ profile.experience }} years</li>
+            <li><strong>Certifications:</strong> {{ profile.certifications|join:", " }}</li>
+            <li><strong>Links:</strong>
+                {% with links=profile.get_links %}
+                    {% if links.linkedin %}
+                        <a href="{{ links.linkedin }}" target="_blank">LinkedIn</a>
+                    {% endif %}
+                    {% if links.github %}
+                        &nbsp;|&nbsp;<a href="{{ links.github }}" target="_blank">GitHub</a>
+                    {% endif %}
+                    {% if links.portfolio %}
+                        &nbsp;|&nbsp;<a href="{{ links.portfolio }}" target="_blank">Portfolio</a>
+                    {% endif %}
+                    {% if links.other %}
+                        {% for o in links.other %}
+                            &nbsp;|&nbsp;<a href="{{ o.url }}" target="_blank">{{ o.label }}</a>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </li>
+        </ul>
+
+        <br>
+        <a href="{% url 'edit_profile' %}" class="edit-btn">Edit Profile</a>
+    </div>
+
+    <!-- Jobs Card -->
+    <div class="jobs-card">
+        <h2>Job Opportunities & ATS Scores</h2>
+
+        <table>
+            <tr>
+                <th>Job Title</th>
+                <th>Required Skills</th>
+                <th>ATS Score</th>
+                <th>Recommendation</th>
+            </tr>
+            {% for item in jobs_with_score %}
+            <tr>
+                <td>{{ item.job.title }}</td>
+                <td>{{ item.job.required_skills|join:", " }}</td>
+                <td>{{ item.score }}%</td>
+                <td>
+                    {% if item.score >= 70 %}
+                        <span class="apply">Apply</span>
+                    {% else %}
+                        <span class="improve">Improve Resume</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No jobs available currently.</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

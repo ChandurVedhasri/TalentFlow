@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post a Job</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #6ee7d2, #b7c9f2);
+            min-height: 100vh;
+        }
+
+        /* CENTER PAGE CONTENT */
+        .page-center {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 14px;
+            width: 100%;
+            max-width: 520px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: 0.2s;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #3b5bdb;
+            box-shadow: 0 0 0 3px rgba(59,91,219,0.15);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #3b5bdb;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .messages {
+            background: #e6f4ea;
+            color: #1b5e20;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 16px;
+            color: #3b5bdb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-center">
+        <div class="card">
+
+            <h1>Post a Job</h1>
+
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="messages">{{ msg }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label>Job Title</label>
+                    <input type="text" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea name="description" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Required Skills (comma separated)</label>
+                    <input type="text" name="required_skills" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Application Link (optional)</label>
+                    <input type="url" name="application_link">
+                </div>
+
+                <button type="submit">Post Job</button>
+            </form>
+
+            <a class="back-link" href="{% url 'recruiter_dashboard' %}">
+                ← Back to Dashboard
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>
